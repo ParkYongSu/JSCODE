@@ -1,17 +1,15 @@
-import jscode4.Student;
-
-import java.util.ArrayList;
-import java.util.List;
+import jscode4.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<Student> studentList = new ArrayList<>();
-        studentList.add(new Student("제이슨", 87, 92));
-        studentList.add(new Student("레이첼", 82, 92));
-        studentList.add(new Student("리사", 92, 88));
+        Library library = new Library();
+        Book book1 = new Book("클린코드(Clean Code)", true);
+        Book book2 = new Book("객체지향의 사실과 오해", true);
+        Book book3 = new Book("테스트 주도 개발(TDD)", true);
+        library.addBook(book1);
+        library.addBook(book2);
+        library.addBook(book3);
 
-        for (Student student : studentList) {
-            student.printInfo();
-        }
+        library.rent();
     }
 }
