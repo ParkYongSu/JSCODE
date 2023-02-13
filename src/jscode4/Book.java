@@ -10,7 +10,7 @@ public class Book {
     }
 
     public void printInfo(int number) {
-        String rentStatus = this.enableRental ? "대여 가능" : "대여중";
+        String rentStatus = this.enableRental ? "대여 가능" : "대여 중";
         System.out.println(number + ". " + name + "-" + rentStatus);
     }
 
