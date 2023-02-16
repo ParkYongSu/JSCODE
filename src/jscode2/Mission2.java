@@ -7,7 +7,6 @@ public class Mission2 {
         int max;
         int min;
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("몇 기인지 입력해주세요.");
         int groupNum = scanner.nextInt();
 
